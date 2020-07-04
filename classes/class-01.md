@@ -311,3 +311,104 @@ HTML5 introduces a new set of elements that allow you to divide up the parts of 
   </body>
 </html>
 ```
+
+## 5. Chapter 18 Process & Design.
+
+This chapter discusses a process that you can use when you are creating a new website, every website should be designed for the target audience, not just for yourself or the site owner. It is therefore very important to understand who your target audance is. the author should ask himself these questions
+
+A. who is your visitores.
+
+Are they individuals? if is you should know the range of thier age,gender,countries,average income,type of education,how many ours do they work per week.
+
+Are they companies? if are you should know the size of this company,the position of the people who visited the site, do they use the website for themselves or for someone else.
+
+B. Why People visit your website.
+
+Now that you know who your visitors are, you need to consider why they are coming. While some people will simply chance across your website, most will visit for a specific reason.
+
+The first attempts to discover the underlying motivations for why visitors come to the site.
+The second examines the specific goals of the visitors. These are the triggers making them come to the site now.
+
+C. What your visitors are trying to achieve.
+
+It is unlikely that you will be able to list every reason why someone visits your site but you are looking for key tasks and motivations. This information can help guide your site designs.
+
+First you want to create a list of reasons why people would be coming to your site. You can then assign the list of tasks to the fictional visitors you created in the step described on the previous point.
+
+D. What inFormation your visitors need
+
+You know who is coming to your site and why they are coming, so now you need to work out what information they need in order to achieve their goals quickly and effectively.
+
+E. How often people will visit your site.
+
+Some sites benefit from being updated more frequently than others. Some information (such as news) may be constantly changing, while other content remains relatively static.
+
+### 5.1 Site Maps.
+
+Now that you know what needs to appear on your site, you can start to organize the information into sections or pages.The aim is to create a diagram of the pages that will be used to structure the site. This is known as a site map and it will show how those pages can be grouped.
+
+To help you decide what information should go on each page, you can use a technique called **_card sorting_**.
+
+This involves placing each piece of information that a visitor might need to know on a separate piece of paper and then organizing the related information into groups.
+
+### 5.2 WireFrames.
+
+A wireframe is a simple sketch of the key information that needs to go on each page of a site. It shows the hierarchy of the information and how much space it might require.
+
+### 5.3 Getting your message across using Design.
+
+The primary aim of any kind of visual design is to communicate. Organizing and prioritizing information on a page helps users understand its importance and what order to read it in.
+
+- Content : Web pages often have a lot of information to communicate. For example, the pages of online newspapers will have information that does not appear on every page of the print equivalent.
+
+- Prioritizing : If everything on a page appeared in the same style, it would be much harder to understand. (Key messages would not stand out.)
+
+- organizing : Grouping together related content into blocks or chunks makes the page look simpler (and easier to understand).
+
+- visual hierarchy : Attention is immediately drawn to a picture that shows the service this company offers and a headline to explain it. The size and colored background reinforce that this is the primary message on the page.
+
+- grouping.
+
+- similarity
+
+### 5.4 Visual Hierachy.
+
+Most web users do not read entire pages. Rather, they skim to find information. You can use contrast to create a visual hierarchy that gets across your key message and helps users find what they are looking for.
+
+- Size : make the important information with larg font size.
+
+- Color : Foreground and background color can draw attention to key messages.
+
+- Style : An element may be the same size and color as surrounding content but have a different style applied to it to make it stand out.
+
+### 5.5 Grouping and similarity.
+
+When making sense of a design, we tend to organize visual elements into groups. Grouping related pieces of information together can make a design easier to comprehend. Here are some ways this can be achieved.
+
+- Proximity : When several items are placed close together, they are perceived as more related than items that are placed further apart.
+
+- closure : When faced with a complicated arrangement of items, we will often look for a single or recognisable pattern or form. A real or imaginary box can be formed around elements due to their proximity and alignment.
+
+- continuance : When elements are placed in a line or a curve then they are perceived to be more related than those that are not following the same direction. This can be used to direct a reader from one part of a page to the next.
+
+- White space : Placing related items closer together and leaving a bigger gap between unrelated items.
+
+- Color : A background color placed behind related items to emphasize their connection.
+
+- Borders : A line can be drawn around the border of the group or between it and its neighbors.
+
+### 5.6 Designing Navigation.
+
+Site navigation not only helps people find where they want to go, but also helps them understand what your site is about and how it is organized. Good navigation tends to follow these principles...
+
+- Concise :Ideally, the navigation should be quick and easy to read. It is a good idea to try to limit the number of options in a menu to no more than eight links. These can link to section homepages which in turn link to other pages.
+
+- Clear : Users should be able to predict the kind of information that they will find on the page before clicking on the link. Where possible, choose single descriptive words for each link rather than phrases.
+
+- Selective : The primary navigation should only reflect the sections or content of the site. Functions like logins and search, and legal information like terms and conditions and so on are best placed elsewhere on the page.
+
+- Context : Good navigation provides context. It lets the user know where they are in the website at that moment. Using a different color or some kind of visual marker to indicate the current page is a good way to do this.
+
+- Interactive : Each link should be big enough to click on and the appearance of the link should change when the user hovers over each item or clicks on it. It should also be visually distinct from other content on the page.
+
+- Consistent : The more pages a site contains, the larger the number of navigation items there will be. Although secondary navigation will change from page to page, it is best to keep the primary navigation exactly the same.
