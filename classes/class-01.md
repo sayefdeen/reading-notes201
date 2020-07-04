@@ -208,3 +208,106 @@ q=charing+cross+road+london&amp;output=embed"
   </body>
 </html>
 ```
+
+## 4. Chapter 17 HTML5 Layout
+
+For a long time, web page authirs used `<div>` elements to group together related elements on the page (such as the elements that form a header,and article, footer of sidebar) authors used class of id attributes to indicate the role of the `<div>` elemts in the structure of the page.
+
+HTML5 introduces a new set of elements that allow you to divide up the parts of a page. The names of these elemnts indicate the kind of content you will find in them.
+
+- `<header>` : The main header that appear in the top of the page.
+
+- `<footer>` : The main footer that appear in the bottom of the page.
+
+- `<nav>` : this element is used to contain the major navigational blocks on the site such as the primary site navigation.
+
+- `<article>` : this element acts as a container for any section of a page that could stand alone and potentially be syndicated.
+
+- `<aside>` : this element has two purposes, depending on whether it is inside an `<article>` element or not.
+
+- `<section>` : this element groups related content together, and typically each section would have its own heading.
+
+- `<hgroup>` : The purpose of the `<hgroup>` element is to group together a set of one or more `<h1>` through `<h6>` elements so that they are treated as one single heading.
+
+- `<figure> <figcaption>` :It can be used to contain any content that is referenced from the main flow of an article (not just images). images,Videos,Graphes,Diagrams,Code samples and text that support the main body of an article.
+
+- `<div>` :this element still important to groupe together related elements.
+
+### Example
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5 Layout</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Yoko's Kitchen</h1>
+        <nav>
+          <ul>
+            <li><a href="" class="current">home</a></li>
+            <li><a href="">classes</a></li>
+            <li><a href="">catering</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="courses">
+        <article>
+          <figure>
+            <img src="images/bok-choi.jpg" alt="Bok Choi" />
+            <figcaption>Bok Choi</figcaption>
+          </figure>
+          <hgroup>
+            <h2>Japanese Vegetarian</h2>
+            <h3>Five week course in London</h3>
+          </hgroup>
+          <p>
+            A five week introduction to traditional Japanese vegetarian meals,
+            teaching you a selection of rice and noodle dishes.
+          </p>
+        </article>
+        <article>
+          <figure>
+            <img src="images/teriyaki.jpg" alt="Teriyaki sauce" />
+            <figcaption>Teriyaki Sauce</figcaption>
+          </figure>
+          <hgroup>
+            <h2>Sauces Masterclass</h2>
+            <h3>One day workshop</h3>
+          </hgroup>
+          <p>
+            An intensive one-day course looking at how to create the most
+            delicious sauces for use in a range of Japanese cookery.
+          </p>
+        </article>
+      </section>
+      <aside>
+        <section class="popular-recipes">
+          <h2>Popular Recipes</h2>
+          <a href="">Yakitori (grilled chicken)</a>
+          <a href="">Tsukune (minced chicken patties)</a>
+          <a href="">Okonomiyaki (savory pancakes)</a>
+          <a href="">Mizutaki (chicken stew)</a>
+        </section>
+        <section class="contact-details">
+          <h2>Contact</h2>
+          <p>
+            Yoko's Kitchen<br />
+            27 Redchurch Street<br />
+            Shoreditch<br />
+            London E2 7DP
+          </p>
+        </section>
+      </aside>
+      <footer>
+        &copy; 2011 Yoko's Kitchen
+      </footer>
+    </div>
+    <!-- .wrapper -->
+  </body>
+</html>
+```
