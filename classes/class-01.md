@@ -62,4 +62,147 @@ The HTML code (blue) is made up of characters that live inside angled brackets-t
 
 Go to any web page you want to see its code, then right click in any empty space, then click in **_View Page source_**.
 
-## 3. Chapter 8 Extra Markup
+## 3. Chapter 8 Extra Markup.
+
+Since the web was first created, there have been several different versions of HTML, Each new version was designed to be an improvement on the last (with new elements and attributes added and older code removed).
+
+1. HTML4 Released 1997, had some presentational elements to control the appearance of pages, authors are not recommended to use them any more. (Examples include the `<center>` element for centering content on a page, `<font>` for controlling the appearance of text, and
+   `<strike>` to put a line through the text all of these can be achieved with CSS instead.)
+
+2. In 1998, a language called XML was published. Its purpose was to allow people to write new markup languages. Since HTML was the most widely used markup language around, it was
+   decided that HTML 4 should be reformulated to follow the rules of XML and it was renamed
+   XHTML. This meant that authors had to follow some new, more strict rules about writing
+   markup. For example:
+
+- Every element needed a
+  closing tag (except for empty
+  elements such as `<img/>`).
+- Attribute names had to be in lowercase.
+- All attributes required a value, and all values were to be placed in double quotes
+- Deprecated elements should no longer be used.
+- Every element that was opened inside another
+  element should be closed inside that same element.
+
+3. HTML5 Released 2000,In HTML5, web page authors do not need to close all tags, and
+   new elements and attributes will be introduced. At the time of writing, the HTML5 specification
+   had not been completed, but the major browser makers had started to implement many of
+   the new features, and web page authors were rapidly adopting the new markup.
+
+### Examples Of Tags.
+
+- DOCTYPES : `<!DOCTYPE html>` Because there have been several versions of HTML, each
+  web page should begin with a DOCTYPE declaration to tell a browser which version of HTML the page is using (although
+  browsers usually display the page even if it is not included).
+
+- Comments In HTML : `<!-- -->` If you want to add a comment to your code that will not be
+  visible in the user's browser, you
+  can add the text between these
+  characters:
+  `<!-- comment goes here -->`
+
+- ID attribute : `id="id_example"` Every HTML element can carry the id attribute. It is used to uniquely identify that element
+  from other elements on the page. Its value should start with a letter or an underscore (not a number or any other character).
+
+- Class attribure : `class="class_example"` Every HTML element can also carry a class attribute. Sometimes, rather than uniquely
+  identifying one element within a document, you will want a way to identify several elements
+  as being different from the other elements on the page.
+
+- Block elements : Some elements will always
+  appear to start on a new line in the browser window. These are known as block level elements.
+  such like `<h1-h6> <p> <ul> <li>`
+
+- Inline elements : Some elements will always
+  appear to continue on the same line as their neighbouring elements. These are known as
+  inline elements. such like `<a> <b> <em> <img>`
+
+- Grouping Text & elements in a block : `<div>` element allows you to group a set of elements together
+  in one block-level box.
+
+- Grouping Text & elements inline : The `<span>` element acts like
+  an inline equivalent of the `<div>`
+  element. It is used to either
+
+      *  Contain a section of text where there is no other suitable element to differentiate it from its surrounding text
+
+      * Contain a number of inline elements
+
+- IFRAMES `<iframe>` : An iframe is like a little window that has been cut into your
+  page — and in that window you can see another page. The term iframe is an abbreviation of inline frame.
+
+### Escape Characters
+
+There are some characters that are used in and reserved by HTML code
+
+| Characters |         Name         |        HTML         |
+| :--------: | :------------------: | :-----------------: |
+|     <      |    Less-than sign    |   `&lt;` `&#60;`    |
+|     >      |  Greater-than sign   |   `&gt;` `&amp;`    |
+|     &      |      Ampersand       |   `&amp;` `&#38;`   |
+|     "      |    Quotation mark    |  `&quot;` `&#34;`   |
+|     ¢      |      Cent sign       |  `&cent;` `&#162;`  |
+|     £      |      Pound sign      | `&pound;` `&#163;`  |
+|     ¥      |       Yen sign       |  `&yen;` `&#165;`   |
+|     ¤      |      Euro sign       | `&euro;` `&#8364;`  |
+|     ©      |   Copyright symbol   |  `&copy;` `&#169;`  |
+|     ®      | Registered trademark |  `&reg;` `&#174;`   |
+|     ™      |      Trademark       | `&trade;` `&#8482;` |
+|     ‘      |  Left single quote   | `&lsquo;` `&#8216;` |
+|     '      |  Right single quote  | `&rsquo;` `&#8217;` |
+|     “      |  Left double quotes  | `&ldquo;` `&#8220;` |
+|     ”      | Right double quotes  | `&rdquo;` `&#8221;` |
+|     ×      | Multiplication sign  | `&times;` `&#215;`  |
+|     ÷      |    Division sign     | `&divide;` `&#247;` |
+
+|
+
+Exapmle
+
+```html
+EXTRA MARKUP 196
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="description"
+      content="Telephone, email
+and directions for The Art Bookshop, London, UK"
+    />
+    <title>Contact The Art Bookshop, London UK</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>The Art Book Shop</h1>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="index.html">new publications</a></li>
+        <li class="current-page">
+          <a href="index.html">contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- end header -->
+    <div id="content">
+      <p>Charing Cross Road, London, WC2, UK</p>
+      <p><span class="contact">Telephone</span> 0207 946 0946</p>
+      <p>
+        <span class="contact">Email</span>
+        <a href="mailto:books@example.com"> books@example.com</a>
+      </p>
+      <iframe
+        width="425"
+        height="275"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        src="http://maps.google.co.uk/maps?f=q&amp;
+source=s_q&amp;hl=en&amp;geocode=&amp;
+q=charing+cross+road+london&amp;output=embed"
+      >
+      </iframe>
+    </div>
+    <!-- end content -->
+    <p>&copy; The Art Bookshop</p>
+  </body>
+</html>
+```
