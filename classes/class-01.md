@@ -412,3 +412,99 @@ Site navigation not only helps people find where they want to go, but also helps
 - Interactive : Each link should be big enough to click on and the appearance of the link should change when the user hovers over each item or clicks on it. It should also be visually distinct from other content on the page.
 
 - Consistent : The more pages a site contains, the larger the number of navigation items there will be. Although secondary navigation will change from page to page, it is best to keep the primary navigation exactly the same.
+
+## 6. JavaScript.
+
+### 6.1 Introduction.
+
+Before you learn how to read and write JavaScript language itself, you need to become familiar with some key concepts in computer programming.
+
+- What is a script and how do I create one.
+- How do computers fit in with the world around them?
+- How do i write for a web page?
+
+A. What is a Script and how do I create one.
+
+A Script is a series of instructions that a computer can follow to achieve a goal, that the computer an follow step by step.
+
+To write a script you need to first state your goal and then list the tasks need to be completed in order to achieve it. to know what you want ask yourself these questions:
+
+- Define The Goal.
+- Design The Script.
+- Code Each Step.
+
+Every Step for every task needs to be written in a language the computer can understand and follow, you need to learn to think like a computer because they solve tasks in different wats than you.
+
+Since scripts are bunch of step that the computer read, you can use a flowchart to make these step more comfortable to be read by you.
+
+B. How do computers fit in with the world around them?
+
+Computers create moduels of the world using data by using what is called **Objects & Properties**
+
+Objects: In computer Programming each physical thing in the world can be represented as an object each object has its own Properties,Events, and Methods
+
+Properties: refer to the characteristices of an object, each one has a _name & value_
+
+Events: in the real worls people interact with objects, these interactions can change the value of the properties in these objects, so what is an Event? programs are designed to do different things when users interact with the computer in different ways. **An Event is the computer's way of sticking up its hand to say That this is happend**
+
+Methods: typically represent how people interact with the objects in the real world
+
+computers user data to create models of things in the real world.
+The events, methods, and properties of an object all realted to each other.
+
+Events can trigger methods, and methods can retrieve of update an object's properties.
+
+Web browsers create similar models of the web page they are showing and of the browser window that the page is being shown in. such as :
+
+- Window Object : The browser represents each window or tab using a window object, The location property of the window object will tell you you the URL of the current page
+
+- Document Object : The current web page loaded into each window is modelled using document object.
+
+How A browser sees a web page??
+
+in order to understand how you can change the content of an HTML page using JavaScript, you need to know how a browser interprets the HTML code and applies styling to it.
+
+1. Receive a page as HTML code
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    <h1>Main Title Of This page</h1>
+    <p>For all orders and inquiries please call <em> 888888888 </em></p>
+  </body>
+</html>
+```
+
+2. Create a models of the page and store it in memory. (Called The [DOM](https://www.w3schools.com/js/pic_htmltree.gif))
+
+3. User a rendering engine to show the page on screen.
+
+C . How do i write for a web page?
+
+Before diving in the JavaScript coding you have to know HTML and CSS.
+
+- HTML : Content Layer .html files
+- CSS : Presentatin Layer .css files
+- JavaScript: Behavior Layer .js files
+
+How to use Obejects and methods?
+
+This one line of javaScript shows how to use objects and methods.
+
+```javascript
+document.write("Good Afternoon!");
+```
+
+- `document` : the document object which was disscused.
+- `.` Member Operator.
+- `write` : it is a method that was called from the document object.
+
+You have To link youe js file to the HTML file using.
+
+```html
+<script src="[Path of js folder]"></script>
+```
