@@ -7,7 +7,7 @@
 | Days  |   Date   |   Name   |                                   Links                                   |
 | :---: | :------: | :------: | :-----------------------------------------------------------------------: |
 | Day1  | 4/7/2020 | class-01 | [class-01](https://sayefdeen.github.io/reading-notes201/classes/class-01) |
-| Day2  | 5/7/2020 | class-02 |  [Read02](https://sayefdeen.github.io/reading-notes201/classes/class-02)  |
+| Day2  | 5/7/2020 | class-02 | [class-02](https://sayefdeen.github.io/reading-notes201/classes/class-02) |
 | Day3  |          |          |                                                                           |
 | Day4  |          |          |                                                                           |
 | Day5  |          |          |                                                                           |
