@@ -34,7 +34,7 @@ When creating a web page, you add tags (known as markup) to the content of the p
 |    `<del>`     |     delete      |                         can show text that has been deleted from a document.                          |
 |     `<s>`      |                 | element indicates something that is no longer accurate or relevant (but that should not be deleted).  |
 
-### Exapmle
+### Example
 
 ```html
 <html>
@@ -66,3 +66,71 @@ When creating a web page, you add tags (known as markup) to the content of the p
 ```
 
 ## Chapter 10 Introduction CSS.
+
+---
+
+The key to under standing how CSS works is to imagine that there is an invisible box aroung every HTML element, CSS allows you to create rules that control the way each individual box (and the contents of theat box) is presented.
+
+CSS works by associating rules with HTML elements. These rules govern how the content of specified elements should be displayed. A CSS rule contains two parts: a selector and a declaration.
+
+```css
+p {
+  font-family: Arial;
+  color: red;
+}
+```
+
+- p is the selector
+- font-family : called the property.
+- Arial : called the value.
+
+**How can you connect CSS into HTML document?**
+
+you have three ways to connect Css files to HTML documents.
+
+- Using External CSS By using `<link>` tag with `href` attribute.
+  ```html
+  <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  ```
+
+* Using internal CSS By using the `<style>` tag in HTML document.
+
+      ```html
+      <!DOCTYPE html>
+      <html>
+      <head>
+      <title>Using Internal CSS</title>
+      <style type="text/css">
+        body {
+          font-family: arial;
+          background-color: rgb(185, 179, 175);
+        }
+        h1 {
+          color: rgb(255, 255, 255);
+        }
+      </style>
+
+    </head>
+    <body>
+      <h1>Potatoes</h1>
+      <p>
+        There are dozens of different potato varieties. They are usually described
+        as early, second early and maincrop.
+      </p>
+    </body>
+  </html>
+
+---
+
+### CSS selectors.
+
+| Name                      | Symbol        | Targets                                                                                    |
+| ------------------------- | ------------- | ------------------------------------------------------------------------------------------ |
+| Universal selector        | `*{}`         | Target all the elements within the page                                                    |
+| Type Selector             | `h1,h2,h3 {}` | Target the `<h1>`,`<h2>`,`<h3>` elements                                                   |
+| Class Selector            | `.note {}`    | Target each elemnt that hade `class="note"` as a class                                     |
+| ID Selector               | `#note {}`    | Target each elemnt that hade `id="note"` as a class                                        |
+| Child Selector            | `li>a {}`     | Target each `<a>` that it is inside a `<li>` tag                                           |
+| Descendant Selector       | `p a {}`      | Target each `<a>` that it is inside a `<p>` tag even there is another elemnts between them |
+| Adjacent Sibling Selector | `h1+p {}`     | Target the **first** `<p>` element after any `<h1>` element (But no other elements)        |
+| General Sibling Selector  | `h1~p {}`     | if you had two `<p>` elements after any `<h1>` element this rule apply to both             |
