@@ -202,3 +202,45 @@ var msg = showGardenSize();
 If you notice that width and height varaibles are declared as local variables (function-level), so there is no name conflict between the two scripts, On the other hand the variable msg was declared as a global variable so here we will hava a naming conflict.
 
 ---
+
+## Article: “6 Reasons for Pair Programming”.
+
+Iterative loops. Code reviews. Fast feedback. Error checking and linting. These are software engineering practices that have proven to dramatically improve the quality of code developers produce. you can get these practices while typing code line by line, by using something called **pair programming**.
+
+### How dose pair programming work?
+
+In this technique there is two roles : the Driver and the Navigator.
+
+The Driver is the programes who is typing and the only ine whose hands are on the keyboard, handling the coding, manages the text editor, switching files,version control and codeing.
+
+The Navigator uses their words to suide the Driver but sode not provide ant direct input to the computer, thinks about the big picture, what comes next, how an algotith might be converted in to code, while scanning for typos or bugs.
+
+### Why pair Program?
+
+while learning a new language you need to have four skills, Listening, Speaking, Reading,and Writing.
+
+Developers explain out what the code should bt, listen to others' guidance, read code that others have written, and write code themselves.
+
+1. Greate efficieny.
+
+   If you think about it pari programming takes longer time to finish the job, because ther is two people focus n the same code base, but it is easier to catch mistakes in the making, so it produces higher quality code that doesn't require later effort in troubleshooting and debugging, so in the long term it's often actually more efficient than two people working on separate features.
+
+2. Engaged collaboration.
+
+   When two programmers focus on the same code, the experience is more engaging and both programmers are more focused than if they were working alone. When developers pair program, they rely more on each other and can often find a solution together without needing to ask for additional help.
+
+3. Learning from fellow students.
+
+   The developers in a pairing have different skill sets. If one programmer is more experienced in a certain skill, they can teach a student who is less familiar with that area.
+
+4. Social Skills.
+
+   Pair programming is great for improving social skills. When working with someone who has a different coding style, communication is key. This can become more difficult when two programmers have different personalities.
+
+5. Job interview readiness.
+
+   A common step in many interview processes involves pair programming between a current employee and an applicant, either in person or through a shared screen. They will carry out exercises together, such as code challenges, building a project or feature, or debugging an existing code base. By doing so, companies can get a better feel for how an applicant will fit into the team and their collaboration style.
+
+6. Work environment readiness.
+
+   Many companies that utilize pair programing expect to train fresh hires from CS-degree programs on how they operate to actually deliver a product. Code Fellows graduates who are already familiar with how pairing works can hit the ground running at a new job, with one less hurdle to overcome
