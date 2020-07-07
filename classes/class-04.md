@@ -97,3 +97,108 @@ To indicate where a box should be positioned, you may also need to use box offse
 - Floating elements : Floating an element allows you to take that element out of normal flow and position it to the far left or right of a containing box. The floated element becomes a block-level element around which other content can flow.
 
 ---
+
+## Cahpter 3 Js Book Functions, methods & Objects.
+
+Browsers require very detailed instructions about what we want them to do, Therfore, complex scripts can run to hundreds of lines. Programmers use functions, methods,and objects to orginize their code.
+
+### Functions.
+
+functions let you group a series of statments together to perform a specific task, If different parts of a script repeat the same task, you can reuse the function (rather than repeating the same set of statements).
+
+To create a function, you give it a name and then write the statments neede to achieve its task inside the curly braces.
+This is known as a **_function declaration_**
+
+**Example for declaring a function**
+
+```javaScript
+var msg = 'Sign up to receive our newsletter for 10% off!';
+
+function updateMessage() {
+  // Some Codes (Script) that will excuted if the function was called;
+}
+
+// Thats how we call a function
+updateMessage();
+
+  //  width and heigth called the function parameters.
+function getArea(width, height){
+  return width * height;
+
+// function that returns a single value;
+function getArea (width, height){
+  var area = width * height;
+  return area;
+}
+// this is how we call a function with arguments
+  getAre(3,5);
+
+
+// This function returns multiple values in an array.
+function getSize(width,height,depth){
+  var area = width * height;
+  var volume = width * height * depth;
+  var sizes = [area,volume];
+  return sizes;
+}
+
+// Fucntion expression you can decleare a function to a vairable and called this fucntion by the variable name.
+var area = function(width,height){
+  return width * height;
+};
+
+var size = area(3,4);
+
+// Immediately Invoked Function.
+
+var area = (function (){
+var width = 3;
+var height = 2;
+return width * height;
+}());
+
+// The final () after the closin curly braces of the code block interpreter to call the function immediately.
+// The groping operators are paerntheses there to ensure the intepreter treats this as an expression.
+}
+```
+
+### Note:
+
+- Parameters : whent the function was declared, you can see the word (width, height) inside the curly braces of the function, those words act like vairables.
+
+- Arguments : When the function was called, the values that was requierd form the function (3,5) are called arguments.
+
+### Viriable scope
+
+The location where you declare a varable will affect where it can be used within you code, if you declare it within a function, it can only be used within that function. This is known as the variable's scope.
+
+- function-level variable : Called for the variable if it was created in a function , and it has a function-level-scope.
+  - if the function runs twice, the variable can have different values each time.
+  - Two different function can use variables with the same name without any kind of naming conflict.
+- global variable : Called for the variable if it was created outside a function, it can be used anywhere within the script,
+
+### Naming collisions.
+
+if an HTML Page uses two JavaScript files, and both hava a global varable with the same name, it can cause errors, **_because the global variable is stored in the momery as long as the web page is loaded, but the fucntion-level variables are stored as the function run, and the momery will delete them after the script in the function is finished_** Imagine a page using these two scripts:
+
+```javascript
+function showPlotSize() {
+  var width = 3;
+  var height = 2;
+  return "Area: " + width * height;
+}
+var msg = showPlotSize();
+```
+
+```javascript
+function showGardernSize() {
+  var width = 12;
+  var height = 25;
+  return width * height;
+}
+var msg = showGardenSize();
+```
+
+If you notice that width and height varaibles are declared as local variables (function-level), so there is no name conflict between the two scripts, On the other hand the variable msg was declared as a global variable so here we will hava a naming conflict.
+
+---
