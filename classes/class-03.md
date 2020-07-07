@@ -300,3 +300,120 @@ p {
 ---
 
 ## Capter 4 in Js Book Loops.
+
+### Switch Statment.
+
+in this example, the purpose of the switch statment is to present the user with a different massages depending in which level they are at.
+
+```javascript
+var msg;
+var level = 2;
+switch (level) {
+  case 1:
+    msg = "Good Luck on the first test";
+    break;
+  case 2:
+    msg = "Second of three - Keep going!";
+    break;
+    msg = "Final round, almost there!";
+    break;
+  default:
+    msg = "Good Luck!";
+    break;
+}
+```
+
+### Note:
+
+JavaScript use **weak typing** it means that the data type could be changed in the background by the language itself, Some other languages such as Java it makes the programed specify the type of each variable, it called **Strong Typing**.
+
+### Truthy & Falsy Values.
+
+Falsy Values
+
+|           Value            |               Description               |
+| :------------------------: | :-------------------------------------: |
+|  `var highScore = false`   |      The traditional Boolean false      |
+|    `var highScore = 0`     |             The number zero             |
+|    `var highScore = ''`    |           NAN (Not a number)            |
+| `var highScore = 10/score` |               Empty value               |
+|     `var highScore :`      | A variable with no value assigned to it |
+
+Truthy Values
+
+|          Value          |         Description          |
+| :---------------------: | :--------------------------: |
+| `var highScore = true`  | The traditional Boolean ture |
+|   `var highScore = 1`   |   numbers other than zero    |
+| `var highScore = 'wow'` |     string with contetn      |
+| `var highScore = 10/5`  |            Number            |
+|   `var highScore '0'`   |   Zero written as a string   |
+| `var highScore 'false'` |  false written as a string   |
+| `var highScore 'true'`  |   true written as a string   |
+
+### Checking Equality \$ Existence.
+
+|      Expression      | Result |
+| :------------------: | :----: |
+|     `false ==0`      |  true  |
+|     `false ===0`     | false  |
+|    `false == ''`     |  true  |
+|    `false === ''`    | false  |
+|      `0 == ''`       |  true  |
+|      `0 === ''`      | false  |
+| `undefined == null`  |  true  |
+|   `null == false`    | false  |
+| `undefined == false` | false  |
+|     `null == 0`      | false  |
+|   `undefined == 0`   | false  |
+|    `Nan == null`     | false  |
+|     `Nan == Nan`     | false  |
+
+---
+
+## Loops
+
+Loops check a condition, if it returns true, a code block will run, Then the condition will be checked again and if it still returns true, the code block will run again. It repeatsuntil the condition returns false, There are three commone types of loops.
+
+A . For Loop : if you need to run a code a specifi number of times.
+
+B . While Loop : if you need to run a code but you don't know how many time
+
+C . Do While : this will run the code inside the loop at least **one time** before checking the condition.
+
+`for ( var i = 0; i< 10 ; i++){document.write()}`
+
+`for` : keyword
+`(var i =0;i<10;i++)`: condition (counter)
+`document.write()`: code to execure during loop
+`var i = 0` initializing the counter
+
+`i < 10` condition if it get to false the loop will stop.
+
+`i++` incremant to increase the counter.
+
+Example of while loop:
+
+```javascript
+var i = 1;
+var msg = "";
+while (i < 10) {
+  msg += i + " x 5 =" + i * 5 + "<br>";
+  i++;
+}
+document.write("<p>" + msg + "</p>");
+```
+
+this code will print Multipication Table for 5
+
+1 x 5 = 5<br>
+2 x 5 = 10<br>
+3 x 5 = 15<br>
+4 x 5 = 20<br>
+5 x 5 = 25<br>
+6 x 5 = 30<br>
+7 x 5 = 35<br>
+8 x 5 = 40<br>
+9 x 5 = 45<br>
+
+and it will wtop @ 10
