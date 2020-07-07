@@ -1,6 +1,6 @@
 "use strict";
 
-var answer1, answer2, answer3, answer4, answer5;
+var answer1, answer2, answer3, answer4, answer5, answer6, answer7;
 
 var userName = prompt("Hello Stranger Can I Know Your Name?");
 alert("Nice To meet You, " + userName);
@@ -76,6 +76,27 @@ function questions() {
   }
   //   console.log("You Answer for question 5 was " + correct(answer5));
   alert(correct(answer5));
+  var rightAnswer = 7;
+  // Should have a number validation in this section.
+  for (var i = 4; i > 0; i--) {
+    answer6 = prompt(
+      "You have " +
+        i +
+        " chance left \n what is the number I have in mind between 0-10"
+    );
+    console.log(typeof answer6);
+    if (answer6 > rightAnswer) {
+      alert("Too High");
+    } else if (answer6 < rightAnswer) {
+      alert("Too Low");
+    } else {
+      alert("Correct");
+      break;
+    }
+  }
+  if (i == 0) {
+    alert("The correct number was " + rightAnswer);
+  }
 }
 
 function correct(answer) {
