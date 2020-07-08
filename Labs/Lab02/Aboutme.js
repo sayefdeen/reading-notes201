@@ -2,6 +2,7 @@
 
 var answer1, answer6, answer7;
 var finalResult = 0;
+var Regix = /[\d]/;
 
 var userName = prompt("Hello Stranger Can I Know Your Name?");
 alert("Nice To meet You, " + userName);
@@ -42,22 +43,27 @@ function questions() {
   }
 
   // Should have a number validation in this section.
-  for (var i = 4; i > 0; i--) {
+  for (var i = 50; i > 0; i--) {
     var rightAnswer = Math.floor(Math.random() * 11);
+
     console.log(rightAnswer);
     answer6 = prompt(
       "You have " +
         i +
         " chance left \n what is the number I have in mind between 0-10"
     );
-    if (answer6 > rightAnswer) {
-      alert("Too High");
-    } else if (answer6 < rightAnswer) {
-      alert("Too Low");
+    if (Regix.test(answer6)) {
+      if (answer6 > rightAnswer) {
+        alert("Too High");
+      } else if (answer6 < rightAnswer) {
+        alert("Too Low");
+      } else {
+        finalResult++;
+        alert("Correct");
+        break;
+      }
     } else {
-      finalResult++;
-      alert("Correct");
-      break;
+      alert("Please Enter a number");
     }
   }
   console.log(finalResult);
@@ -87,6 +93,9 @@ function questions() {
       alert("You Got this Wrong!!");
     }
   }
+  alert(
+    `My Favorite movies are ${topMoviesArr[0]} , ${topMoviesArr[1]}, and ${topMoviesArr[2]}`
+  );
 }
 
 function correct(answer) {
