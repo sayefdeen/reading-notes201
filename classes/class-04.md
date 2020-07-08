@@ -111,8 +111,8 @@ This is known as a **_function declaration_**
 
 **Example for declaring a function**
 
-```javaScript
-var msg = 'Sign up to receive our newsletter for 10% off!';
+```javascript
+var msg = "Sign up to receive our newsletter for 10% off!";
 
 function updateMessage() {
   // Some Codes (Script) that will excuted if the function was called;
@@ -121,44 +121,43 @@ function updateMessage() {
 // Thats how we call a function
 updateMessage();
 
-  //  width and heigth called the function parameters.
-function getArea(width, height){
+//  width and heigth called the function parameters.
+function getArea(width, height) {
   return width * height;
 
-// function that returns a single value;
-function getArea (width, height){
-  var area = width * height;
-  return area;
-}
-// this is how we call a function with arguments
-  getAre(3,5);
+  // function that returns a single value;
+  function getArea(width, height) {
+    var area = width * height;
+    return area;
+  }
+  // this is how we call a function with arguments
+  getAre(3, 5);
 
+  // This function returns multiple values in an array.
+  function getSize(width, height, depth) {
+    var area = width * height;
+    var volume = width * height * depth;
+    var sizes = [area, volume];
+    return sizes;
+  }
 
-// This function returns multiple values in an array.
-function getSize(width,height,depth){
-  var area = width * height;
-  var volume = width * height * depth;
-  var sizes = [area,volume];
-  return sizes;
-}
+  // Fucntion expression you can decleare a function to a vairable and called this fucntion by the variable name.
+  var area = function (width, height) {
+    return width * height;
+  };
 
-// Fucntion expression you can decleare a function to a vairable and called this fucntion by the variable name.
-var area = function(width,height){
-  return width * height;
-};
+  var size = area(3, 4);
 
-var size = area(3,4);
+  // Immediately Invoked Function.
 
-// Immediately Invoked Function.
+  var area = (function () {
+    var width = 3;
+    var height = 2;
+    return width * height;
+  })();
 
-var area = (function (){
-var width = 3;
-var height = 2;
-return width * height;
-}());
-
-// The final () after the closin curly braces of the code block interpreter to call the function immediately.
-// The groping operators are paerntheses there to ensure the intepreter treats this as an expression.
+  // The final () after the closin curly braces of the code block interpreter to call the function immediately.
+  // The groping operators are paerntheses there to ensure the intepreter treats this as an expression.
 }
 ```
 
