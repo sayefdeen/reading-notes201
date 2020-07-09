@@ -186,3 +186,71 @@ There are several types of information that need to be displayed in a grid or ta
 `<th>` : table head data.
 `<td>` : table data.
 `<tfoot>` : The footer belongs inside the `<tfoot>` element.
+
+---
+
+## Chapter 12 HTML book Text.
+
+There is 3 main types of default fonts in general.
+
+- Serif : <p style="font-family: serif; ">Serif fonts have extra details on the ends of the main strokes of the letters. These details are known as serifs</p>.
+
+- Sans-serif : <p style ="font-family: sans-serif;">Sans-serif fonts have straight ends to letters, and therefore have a much cleaner design.</p>
+
+- Monospace : <p p style ="font-family: monospace;">Every letter in a monospace (or fixed-width) font is the same width. (Non-monospace fonts have different widths.)</p>
+
+These fonts and many others are installed in your computer by default, but what if i want to use a font that is not intalled?
+
+```css
+@font-face {
+  font-family: "ChunkFiveRegular";
+  src: url("fonts/chunkfive.eot");
+}
+h1,
+h2 {
+  font-family: ChunkFiveRegular, Georgia, serif;
+}
+```
+
+as shown above you can use something called `@font-face` this makes you define a new font family with its url and source, then you can use it freely in any selector you want.
+
+Some important properties for text :
+
+`font-weight : bold/normal` : it makes your text <span style="font-weight : bold">bold</span> ir normal.
+
+`font-style : normal/italic/oblique` : it makes your text appear normal, <span style="font-style : italic">italic</span>, and <span style="font-style : obliqu">obliqu</span>
+
+`text-transform : uppercase/lowercase/capitalize` it makes you text , <span style = "text-transform : uppercase" > uppercase</span> , <span style = "text-transform : lowercase" > LOWERCASE</span> , <span style = "text-transform : capitalize" > capitalize</span>.
+
+`text-decoration : none/underline/overline/line-through/blink` it makes you text , <span style = "text-decoration: none" > none</span> , <span style = "text-decoration : underline" > underline</span> , <span style = "text-decoration : overline" > overline</span>,
+<span style = "text-decoration: line-through" > line through</span> , <span style = "text-decoration : blink" > blink</span>
+
+`line-height` : take a unit like 5px of 1.5 just like WORD , it gives a space between each line.
+
+`letter-spacing/word-spacing` : <span style = "letter-spacing: 5px" > letter spacing</span>
+
+<span style = "word-spacing: 5px" > This Text has normal space</span>
+
+`text-align: left/right/justify/center` :
+
+<p style = "text-align: left" > This Text has left align</p>  
+<p style = "text-align: right" > This Text has right align</p>  
+<p style = "text-align: center" > This Text has center align</p>  
+<p style = "text-align: justify" > This Text has justify align</p>
+
+`text-shadow` : <p style = "background-color: #eeeeee;
+color: #000000;
+text-shadow: 1px 1px 0px #000000;" > This Text has shadow </p>
+
+<p style = "background-color: #cccccc;
+color: #ffffff;
+text-shadow: 2px 2px 7px #111111;" > This Text has shadow </p>
+
+| Selector  |                                          meaning                                          | example                                                                                  |
+| :-------: | :---------------------------------------------------------------------------------------: | ---------------------------------------------------------------------------------------- |
+| existence |                             [ ] Matches a specific attribute                              | p[class] select all p with class attribute                                               |
+| equality  |                  [=] Matches a specific attribute with a specific value                   | p[class="dog"] select all p with attribut class has a value of dog                       |
+|   Space   | [~=] Matches a specific attribute whose value appears in a space- separated list of words | p[class~="dog"] select all p with attribute class and has a seperated value contains dog |  |
+|  prefix   |        [^=] Matches a specific attribute whose value begins with a specific string        | p[attr^"d"] select all p with an attribute begins with d letter                          |
+| Substring |        [*=] Matches a specific attribute whose value contains a specific substring        | p[attr*"do"] select any p with and attribute has a value contains the letter do          |
+|  Suffix   |         [$=] Matches a specific attribute whose valu ends with a specific string          | p[attr$"g"] targer any p with an attribute has a vale ends with the letter g             |
