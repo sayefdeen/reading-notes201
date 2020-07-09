@@ -180,11 +180,17 @@ There are several types of information that need to be displayed in a grid or ta
 </html>
 
 `<table>` : a table tag which contain all the table tags.
+
 `<thead>` : tells the browser that inside this tage is the table head.
+
 `<tbody>` : tells the browser that inside this tage is the table body.
+
 `<tr>` : table row.
+
 `<th>` : table head data.
+
 `<td>` : table data.
+
 `<tfoot>` : The footer belongs inside the `<tfoot>` element.
 
 ---
