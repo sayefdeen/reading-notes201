@@ -25,7 +25,6 @@ function questions() {
     "Question 5 \n Is it true that i graduated with an excellent rating?",
   ];
   for (var q = 0; q < questionArray.length; q++) {
-    console.log(finalResult);
     answer1 = prompt(questionArray[q]);
     while (
       answer1.toLowerCase() !== "yes" &&
@@ -39,14 +38,12 @@ function questions() {
     }
     var guess = correct(answer1);
     alert(guess);
-    console.log("You answer to " + questionArray[q] + " was " + guess);
   }
 
   // Should have a number validation in this section.
   for (var i = 50; i > 0; i--) {
     var rightAnswer = Math.floor(Math.random() * 11);
 
-    console.log(rightAnswer);
     answer6 = prompt(
       "You have " +
         i +
@@ -66,7 +63,6 @@ function questions() {
       alert("Please Enter a number");
     }
   }
-  console.log(finalResult);
   if (i == 0) alert("The correct number was " + rightAnswer);
 
   var topMoviesArr = ["Predestination", "Shutter Island", "Mr Nobody"];
