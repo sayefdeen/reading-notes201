@@ -238,9 +238,7 @@ Some important properties for text :
 <p style = "text-align: center" > This Text has center align</p>  
 <p style = "text-align: justify" > This Text has justify align</p>
 
-`text-shadow` : <p style = "background-color: #eeeeee;
-color: #000000;
-text-shadow: 1px 1px 0px #000000;" > This Text has shadow </p>
+`text-shadow` :
 
 <p style = "background-color: #cccccc;
 color: #ffffff;
