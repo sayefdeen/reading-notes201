@@ -10,6 +10,7 @@
 | Day2  | 5/7/2020 | class-02 | [class-02](https://sayefdeen.github.io/reading-notes201/classes/class-02) |
 | Day3  | 7/7/2020 | class-03 | [class-03](https://sayefdeen.github.io/reading-notes201/classes/class-03) |
 | Day4  | 7/7/2020 | class-04 | [class-04](https://sayefdeen.github.io/reading-notes201/classes/class-04) |
+| Day4  | 8/7/2020 | class-05 | [class-05](https://sayefdeen.github.io/reading-notes201/classes/class-05) |
 | Day5  |          |          |                                                                           |
 | Day6  |          |          |                                                                           |
 | Day7  |          |          |                                                                           |
