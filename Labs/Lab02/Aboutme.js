@@ -41,7 +41,7 @@ function questions() {
   }
 
   // Should have a number validation in this section.
-  for (var i = 50; i > 0; i--) {
+  for (var i = 4; i > 0; i--) {
     var rightAnswer = Math.floor(Math.random() * 11);
 
     answer6 = prompt(
