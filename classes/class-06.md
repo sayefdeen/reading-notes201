@@ -37,3 +37,82 @@ The code above, you can see name,rooms,booked,gtm, and roomTypes : all of htese 
 checkAvailability(); called a method.
 
 <p> You accessing an Object by using what we call a <b>DOT NOTATION</b> It is shown above in the comments.</p>
+
+---
+
+## Chapter 6 Js Book Document Object Model.
+
+The Document object model (DOM) specifies how browsers shuould create a model of an HTML page and how JavaScript can access and update the contents of a web page while it is in the browser window.
+
+You can imagin that the HTML page is like a tree, each element has some branches under it all these branched has one parent in the top of it. which it is the `<html>` tag .
+
+```html
+<html>
+  <body>
+    <div id="page">
+      <h1 id="header">List</h1>
+      <h2>By groceries</h2>
+      <ul>
+        <li id="one" class="hot"><em>fresh</em></li>
+        <li id="two" class="hot">pinenuts</li>
+        <li id="three" class="hot">honey</li>
+        <li id="four">balsamic vinegar</li>
+      </ul>
+      <script src="js/list.js"></script>
+    </div>
+  </body>
+</html>
+```
+
+<img src="img/DOM.jpg" align="middle"></img>
+
+<p><span style="color:yellow">The Document Node</span> it represent the entire page (and also correspondes to the document object.), when you access ant element, attribute, or text node you navigate to it via the document node, relationships between the document and all of the element nodes are descibed using the terms as a family tree : Parent,Children,Sibling, Ancestors, and Descendants.
+<p><span style="color:green">The Element Nodes</span> HTML elements describe the structure of an HTML page, to access the DOM tree, you should start by looking for elements, then you can access its text and attribute nodes if you want to.
+<p><span style="color:orange">The Attribute Nodes</span> Attribute nodes are not <b>children</b> of the element. 
+<p><span style="color:pink">Text Nodes</span> Once you have accessed an element node, you can then reach the text within that element
+
+### Working with the DOM tree.
+
+1.  Access the elements : you can access any element in the DOM by using these selectors.
+
+    - getElementById(id name) : Used to select an element with a specific id.
+
+    - getElementsByClassName(class name) : Used to select all elements that have that class name as an attribute (Returns an array of elements), to select one of the items you can use the **item(index)** method or you can access it just like an array.
+
+    - parentNode: select the parent of the current element node.
+
+    - previousSibling/nextSibling: select the previous of next sibling of the DOM tree.
+
+    - firstChild/lastChild: select the first child of the last of the current element.
+
+    - querySelector(): Uses a CSS selector, and returns the first matching element.
+
+    - getElementsByTagName(tag name) : select all elements that have this tag name.
+
+    - querySelectorAll(): Uses a CSS selector to select all matching elements.
+
+2.  Work with those elements.
+
+- Access/Update Text nodes:
+
+  - nodeValue :This property lets you access or update contents of a text node.
+
+- Work with HTML content
+
+  - innerHTMl : allows to access child elements and text content.
+
+  - textContent : same as innerHTML.
+
+  - createElement()/createTextNode() : this method let you create new nodes.
+
+  - appendChild()/removeChild() : Add nodes to a tree/ remove nodes from a tree.
+
+- Access or Update Attribute values
+
+  - hasAttribute() : checks if the attribute exists.
+
+  - getAttribute() : get the value of an attribute.
+
+  - setAttribute() : update the value.
+
+  - removeAttribute() : removes the attributes.
