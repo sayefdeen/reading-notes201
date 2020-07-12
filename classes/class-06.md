@@ -117,7 +117,7 @@ You can imagin that the HTML page is like a tree, each element has some branches
 
   - setAttribute() : update the value.
 
-  - removeAttribute() : removes the attributes.
+  * removeAttribute() : removes the attributes.
 
 ### Cross-site Scripting (XSS) attacks.
 
