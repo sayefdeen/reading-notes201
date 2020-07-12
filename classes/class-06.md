@@ -8,10 +8,10 @@
 
 Objects group together a set of variables and function to create a model of a something you would recognize from the real world,
 
-<p style = "text-transform : Uppercase"> in an objects variables becomes known as properties </p> properties tell us about the object,such as the name of a hotel or the number of rooms it has.
-<p style = "text-transform : Uppercase"> in an objects functions becomes known as methods </p> methods represent tasks that are associated with the object.
+<p><span style = "text-transform : Uppercase"> in an objects variables becomes known as properties </span> properties tell us about the object,such as the name of a hotel or the number of rooms it has.</p>
+<p><span style = "text-transform : Uppercase"> in an objects functions becomes known as methods </span> methods represent tasks that are associated with the object.</p>
 
-**Example**:
+**Example**
 
 ```javascript
 var hotel = {
@@ -64,11 +64,14 @@ You can imagin that the HTML page is like a tree, each element has some branches
 </html>
 ```
 
-<img src="img/DOM.jpg" align="middle">
+<img src="img/DOM.jpg" align="middle"/>
 
 <p><span style="color:yellow">The Document Node</span> it represent the entire page (and also correspondes to the document object.), when you access ant element, attribute, or text node you navigate to it via the document node, relationships between the document and all of the element nodes are descibed using the terms as a family tree : Parent,Children,Sibling, Ancestors, and Descendants.</p>
-<p><span style="color:green">The Element Nodes</span> HTML elements describe the structure of an HTML page, to access the DOM tree, you should start by looking for elements, then you can access its text and attribute nodes if you want to.<p>
+
+<p><span style="color:green">The Element Nodes</span> HTML elements describe the structure of an HTML page, to access the DOM tree, you should start by looking for elements, then you can access its text and attribute nodes if you want to.</p>
+
 <p><span style="color:orange">The Attribute Nodes</span> Attribute nodes are not <b>children</b> of the element.</p>
+
 <p><span style="color:pink">Text Nodes</span> Once you have accessed an element node, you can then reach the text within that element</p>
 
 <h3> Working with the DOM tree. </h3>
@@ -131,7 +134,7 @@ XSS involves an attacker placing malicious code into a site, websites ofter feat
 
 <h4 style="text-transform: capitalize"> what can hese attacks do</h4>
 
-XSS can gice the attacker access to informtion in :
+XSS can give the attacker access to informtion in :
 
 <ul>
 <li> The DOM (including form data).</li>
@@ -140,8 +143,6 @@ XSS can gice the attacker access to informtion in :
 </ul>
 
 <h4 style="text-transform: uppercase">Defending against cross-site scripting</h4>
-
-Validate inpute going to the server.
 
 <ol>
 <li> Only let the visitors input the kind of characters they need to when supplying information, This is known as **Validation**.</li>
@@ -157,7 +158,7 @@ Validate inpute going to the server.
 <li> Do not create DOM fragments containing HTML from untrusted sources. It should only be added as text once it has been escaped.</li>
 </ol>
 
-## Understanding The Problem Domain Is The Hardest Part Of Programming
+<h2> Understanding The Problem Domain Is The Hardest Part Of Programming </h2>
 
 There are many that is hard about programming
 
@@ -173,15 +174,15 @@ There are many that is hard about programming
 
 - Making software maintainable
 
-### Why problem domains are hard.
+<h3> Why problem domains are hard.</h3>
 
 The big issue is that many problem domains are like a puzzle with a blurry picture or no picture at all.you can’t really see what you are trying to build very clearly, The same thing happens when writing code. Writing code is a lot like putting together a jigsaw puzzle. We put together code with the purpose of building components that we have taken out of the “bigger picture” of the problem domain.
 
-### Programming is easy if you understand the problem domain.
+<h3> Programming is easy if you understand the problem domain.</h3>
 
 understanding the problem is the most critical piece to the equation. It is very difficult to solve a problem before you know the question. It’s like buzzing in on Jeopardy before you hear the clue and shouting out random questions.
 
-### What can you do about it?
+<h3> What can you do about it?</h3>
 
 1. Make the problem domain easier
 2. Get better at understanding the problem domain
