@@ -73,7 +73,7 @@ You can imagin that the HTML page is like a tree, each element has some branches
 
 <h3> Working with the DOM tree. </h3>
 
-<ol>
+<ul>
 <li> Access the elements : you can access any element in the DOM by using these selectors.</li>
   <ul>
  <li>getElementById(id name) : Used to select an element with a specific id.</li>
@@ -93,7 +93,7 @@ You can imagin that the HTML page is like a tree, each element has some branches
 <li>querySelectorAll(): Uses a CSS selector to select all matching elements.</li>
   </ul>
   <li>Work with those elements.</li>
-  <ol>
+  <ul>
   <li>Access/Update Text nodes</li>
   <ul>
     <li>nodeValue :This property lets you access or update contents of a text node.</li>
@@ -118,8 +118,8 @@ You can imagin that the HTML page is like a tree, each element has some branches
 
   <li> removeAttribute() : removes the attributes.</li>
   </ul>
-  </ol>
-</ol>
+  </ul>
+</ul>
 
 ### Cross-site Scripting (XSS) attacks.
 
@@ -156,8 +156,6 @@ Validate inpute going to the server.
 
 <li> Do not create DOM fragments containing HTML from untrusted sources. It should only be added as text once it has been escaped.</li>
 </ol>
-
----
 
 ## Understanding The Problem Domain Is The Hardest Part Of Programming
 
