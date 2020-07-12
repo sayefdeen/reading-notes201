@@ -66,10 +66,10 @@ You can imagin that the HTML page is like a tree, each element has some branches
 
 <img src="img/DOM.jpg" align="middle">
 
-<p><span style="color:yellow">The Document Node</span> it represent the entire page (and also correspondes to the document object.), when you access ant element, attribute, or text node you navigate to it via the document node, relationships between the document and all of the element nodes are descibed using the terms as a family tree : Parent,Children,Sibling, Ancestors, and Descendants.
-<p><span style="color:green">The Element Nodes</span> HTML elements describe the structure of an HTML page, to access the DOM tree, you should start by looking for elements, then you can access its text and attribute nodes if you want to.
-<p><span style="color:orange">The Attribute Nodes</span> Attribute nodes are not <b>children</b> of the element. 
-<p><span style="color:pink">Text Nodes</span> Once you have accessed an element node, you can then reach the text within that element
+<p><span style="color:yellow">The Document Node</span> it represent the entire page (and also correspondes to the document object.), when you access ant element, attribute, or text node you navigate to it via the document node, relationships between the document and all of the element nodes are descibed using the terms as a family tree : Parent,Children,Sibling, Ancestors, and Descendants.</p>
+<p><span style="color:green">The Element Nodes</span> HTML elements describe the structure of an HTML page, to access the DOM tree, you should start by looking for elements, then you can access its text and attribute nodes if you want to.<p>
+<p><span style="color:orange">The Attribute Nodes</span> Attribute nodes are not <b>children</b> of the element.</p>
+<p><span style="color:pink">Text Nodes</span> Once you have accessed an element node, you can then reach the text within that element</p>
 
 ### Working with the DOM tree.
 
