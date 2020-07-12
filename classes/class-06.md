@@ -156,3 +156,34 @@ Validate inpute going to the server.
 
 <li> Do not create DOM fragments containing HTML from untrusted sources. It should only be added as text once it has been escaped.</li>
 </ol>
+
+---
+
+## Understanding The Problem Domain Is The Hardest Part Of Programming
+
+There are many that is hard about programming
+
+- Learning a new technology
+
+- Naming things
+
+- Testing your code
+
+- Debugging
+
+- Fixing bugs
+
+- Making software maintainable
+
+### Why problem domains are hard.
+
+The big issue is that many problem domains are like a puzzle with a blurry picture or no picture at all.you can’t really see what you are trying to build very clearly, The same thing happens when writing code. Writing code is a lot like putting together a jigsaw puzzle. We put together code with the purpose of building components that we have taken out of the “bigger picture” of the problem domain.
+
+### Programming is easy if you understand the problem domain.
+
+understanding the problem is the most critical piece to the equation. It is very difficult to solve a problem before you know the question. It’s like buzzing in on Jeopardy before you hear the clue and shouting out random questions.
+
+### What can you do about it?
+
+1. Make the problem domain easier
+2. Get better at understanding the problem domain
