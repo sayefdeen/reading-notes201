@@ -75,25 +75,25 @@ You can imagin that the HTML page is like a tree, each element has some branches
 
 <br>
 
-1.  Access the elements : you can access any element in the DOM by using these selectors.
+1. Access the elements : you can access any element in the DOM by using these selectors.
 
-    - getElementById(id name) : Used to select an element with a specific id.
+   - getElementById(id name) : Used to select an element with a specific id.
 
-    - getElementsByClassName(class name) : Used to select all elements that have that class name as an attribute (Returns an array of elements), to select one of the items you can use the **item(index)** method or you can access it just like an array.
+   - getElementsByClassName(class name) : Used to select all elements that have that class name as an attribute (Returns an array of elements), to select one of the items you can use the **item(index)** method or you can access it just like an array.
 
-    - parentNode: select the parent of the current element node.
+   - parentNode: select the parent of the current element node.
 
-    - previousSibling/nextSibling: select the previous of next sibling of the DOM tree.
+   - previousSibling/nextSibling: select the previous of next sibling of the DOM tree.
 
-    - firstChild/lastChild: select the first child of the last of the current element.
+   - firstChild/lastChild: select the first child of the last of the current element.
 
-    - querySelector(): Uses a CSS selector, and returns the first matching element.
+   - querySelector(): Uses a CSS selector, and returns the first matching element.
 
-    - getElementsByTagName(tag name) : select all elements that have this tag name.
+   - getElementsByTagName(tag name) : select all elements that have this tag name.
 
-    - querySelectorAll(): Uses a CSS selector to select all matching elements.
+   - querySelectorAll(): Uses a CSS selector to select all matching elements.
 
-2.  Work with those elements.
+2. Work with those elements.
 
 - Access/Update Text nodes:
 
