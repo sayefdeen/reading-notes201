@@ -97,3 +97,26 @@ There are several types of information that need to be displayed in a grid or ta
 `<tfoot>` : The footer belongs inside the `<tfoot>` element.
 
 ---
+
+## Chapter 3 Js Book: Functions, Methods, and Objects.
+
+We talked about function in [class-04](https://sayefdeen.github.io/reading-notes201/classes/class-04) you can go and check that. Here we are going to talk about methods and Objects.
+
+### Creating an Object construction notation.
+
+```javascript
+var hotel = new Object();
+(hotel.name = "Quay"),
+  (hotel.rooms = 40),
+  (hotel.booked = 25),
+  (hotel.checkAvailability = function () {
+    return this.rooms - this.booked;
+  });
+
+// here we created an Instantiation from Object class.
+// To update the value of properties, use dot notation of square brackets.
+hotel.name = "Park";
+hotel["name"] = "Park";
+// delete a propertiy.
+delete hotel.name;
+```
