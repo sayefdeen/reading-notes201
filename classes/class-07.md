@@ -158,3 +158,136 @@ When do we use individual Object Or multiple Objects.
 ## Arrays Are Objects.
 
 Arrays are actually a special type of objects, They hold a related set key/value pairs, but the key for each value is its **index** number.
+
+You can combine arrays and object inside each other.
+
+```javascript
+object1 = {
+  room1: [420, 40, 10],
+  room2: [460, 20, 20],
+  room3: [230, 0, 0],
+  room4: [620, 150, 60],
+};
+
+object1.room1[0];
+//  this gives 420
+```
+
+Browsers come with a set of built-in objects represent things like the browser window and the current web page shown in that window, these built-in objects act like a toolkit for creating interavtice web pages.
+
+Object Model : is a group of objects,each of which represent related things from the real world, together they from a model of something larger.
+
+1. Browser Object Model.
+
+it contains objects that represent the current browser window or tab. it contains object that model things like browser history and the device's screen
+
+The topmost object is the window object, which represent current browser window or tab, its child objects represent other browser features.
+
+- window : current browser window/tab
+
+- document : current web page.
+
+- history : pages in browser history.
+
+- location : url of current page.
+
+- navigator : information about browser.
+
+- screen : device's display information.
+
+2. document Object Model.
+
+It uses objects to create a represetation of the current page, we talked about the document object in [class-06](https://sayefdeen.github.io/reading-notes201/classes/class-06)
+
+3. Global JavaScript Objects.
+
+Represent the things that the javaScript language needs to create a model of,They are a goupe of individual objects that related to different parts of the JavaScript language.
+
+- String : for working with string values.
+
+- Number : for working with numeric values.
+
+- Boolean : for working with boolean values.
+
+- Date : to represent and handle dates.
+
+- Math : for working with numbers and calculations.
+
+- Regex : for matching patterns within string of text.
+
+---
+
+### The Browser Object Model.
+
+|      Property      |                                          Describtion                                          |
+| :----------------: | :-------------------------------------------------------------------------------------------: |
+| window.innerHeight |                                       Height of window                                        |
+| window.innerWidth  |                                        width of window                                        |
+| window.pageXOffset |                       distance documetn has been scrolled horizontally                        |
+| window.pageYOffset |                        distance documetn has been scrolled vertically                         |
+|  window.document   | Reference to document object, which is used to represent the current page contained in window |
+|      Methods       |                                          Description                                          |
+|   window.alert()   |                               create a dialog box with message                                |
+|   window.open()    |                        Opens new browser windoe wiht URL as parameter                         |
+|   window.print()   |                Tells browser that user wantsto print contents of current page                 |
+
+### The Document Object Model.
+
+|       Property        |                   Describtion                    |
+| :-------------------: | :----------------------------------------------: |
+|    document.title     |            Title of current document             |
+| document.lastModified |     Date on which document was last modified     |
+|     document.URL      | Returns String containing URL of curent document |
+|    document.domain    |        Returns domain of current document        |
+
+Methods was described in details in [class-06](https://sayefdeen.github.io/reading-notes201/classes/class-06).
+
+### The String Object.
+
+|    Method     |                                            Describtion                                             |
+| :-----------: | :------------------------------------------------------------------------------------------------: |
+| toUpperCase() |                                   Change the text to UPPER CASE                                    |
+| toLowerCase() |                                    Change the text to lowercase                                    |
+|   charAt()    |         takes an indes number as parameter,and returns the character found at that number          |
+|   indexOf()   | Returns indes number of the first time a character or set of characters is found within the string |
+| lastIndexIf() |    Returns index number of the last time a character of charachters is found within the string     |
+|  subString()  |                         Returns characters found between two index numbers                         |
+|    split()    |             when a character is specified, it splits the string each time it is found.             |
+|    trim()     |                          Remove whitespaces from start and end of string                           |
+|   replace()   |                                       Like find and replace                                        |
+
+### The Number Object.
+
+|     Method      |                           Describtion                            |
+| :-------------: | :--------------------------------------------------------------: |
+|     isNaN()     |               checks if the value is not a number                |
+|    isFixed()    |   Round to specified number of decimal places(return a string)   |
+|  toPrecision()  |        Round to total number of places (returns a string)        |
+| toExponential() | Returns a string representing the number in exponentail notation |
+
+### The Math Object.
+
+|    Prperty    |                Describtion                |
+| :-----------: | :---------------------------------------: |
+|    Math.PI    |        Returns pi (3.14159265359)         |
+| Math.round()  |    Round number to the nearest integer    |
+| Math.sqrt(n)  |  Returns square root of positive number   |
+|  Math.ceil()  |  Round number up to the nearest integer   |
+| Math.floor()  |  Round number down to the nearst integer  |
+| Math.random() | Generates a random number between 0 and 1 |
+
+### The Date Object.
+
+```javascript
+var today = new Date();
+```
+
+|        Method         |                     Describtion                     |
+| :-------------------: | :-------------------------------------------------: |
+|  getDate()/setDate()  |       Returns/set the day of the month (1-31)       |
+|       getDay()        |             Returns the day of the week             |
+|   getFullYear()/set   |          Returns/ sets the year (4 digits)          |
+| getMilliseconds()/set |        Returns/sets the milliseconds (0-999)        |
+|   getMinutes()/set    |           Returns/sets the minutes(0-59)            |
+|    getMonthe()/set    |            Returns/Sets the month (0-11)            |
+|     getTime()/set     | Numbers of milliseconds since 1/1/1971 00:00:00 UTC |
