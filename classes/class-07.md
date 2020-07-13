@@ -120,3 +120,41 @@ hotel["name"] = "Park";
 // delete a propertiy.
 delete hotel.name;
 ```
+
+### Creating Many Objects.
+
+```javascript
+function Hotel(name, rooms, booked) {
+  this.name = name;
+  this.rooms = rooms;
+  this.booked = booked;
+  this.checkAvalibilty = function () {
+    return this.rooms - this.booked;
+  };
+}
+//  To create an instance of the objet Hotel
+var hotel1 = new Hotel("hotel1", 40, 25);
+var hotel2 = new Hotel("hotel2", 120, 77);
+// To call the method inside the constructor.
+
+hotel1.checkAvalibilty();
+```
+
+The this keyword in used insted of the object name to indicate that the property or method belongs to the object that this function created.
+
+When do we use individual Object Or multiple Objects.
+
+1. Indivudal Objects
+
+   - when you are storing/ transmitting data between application.
+
+   - for global or configuration objects that set up inormation for the page.
+
+2. Multible Objects.
+
+   - You have lots of objects used with similar functionality whithin a page.
+   - A complex object might not be used in code.
+
+## Arrays Are Objects.
+
+Arrays are actually a special type of objects, They hold a related set key/value pairs, but the key for each value is its **index** number.
