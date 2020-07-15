@@ -370,4 +370,45 @@ Early versions of HTMl included a set of attributes that could respond to events
   <label for="username"> Create a username:</label>
   <input type="text" id="username" onblur="checkUsername()" />
 </form>
+
+<!-- onblur : triggered when the user leaves the element/ it will call the function called checkUserName() -->
 ```
+
+2. Traditional DOM Event Handlers.
+
+All modern browsers understand this way of creating an event handler, but you can only attach one function to each event handler.
+
+```javascript
+element.onevent = functionName;
+
+function checkUserName() {
+  // code to check user name length
+}
+var el = document.getElementById("username");
+el.onblur = checkUserName;
+//  as you can see the () parentheses are omitted, because we want the function to be called by the event. if the parentheses was checkUserName(); the functon will be called even if the event wasn't triggered
+```
+
+3. Event Listeners.
+
+Event listeners are a more recent approach to handling events, they can deal with more than one funciton at a time, but they are not supported in **_older browsers_**.
+
+```javascript
+element.addEventListener('event',functionName,Boolean);
+// Boolean indicate something called capture, and is usually set to false.
+function checkUserName(){
+  // code to check user name length
+}
+var el = document.getElementById("username");
+el.addEventListener('blur',checkUserName,false);
+
+// Anonymous function.
+
+el.addEventListener('blur',funcntion(){
+  // code that will be triggered by the event.
+},false)
+```
+
+Browser Support: Internet Explorer 8 and earlier versions of IE do not support the `addEventListener()` method, but they do support a method called `attachEvent()`.
+
+<p style="color: green"> Unlike the HTML and traditional DOM event handlers, when you specify the name of the event that you want to react to, the event name is not preceded by the word <b>on</b> </p>
