@@ -270,3 +270,63 @@ If you have empty cells in you table you can choose there display.
 #### Aligning from controls.
 
 Labels for form elements are often different lengths, which means that the form controls will not appear in a straight line. This is demonstrated in the example on the right (without CSS applied to the form controls).
+
+```html
+<form action="example.php" method="post">
+  <div>
+    <label for="name" class="title">Name:</label>
+    <input type="text" id="name" name="name" />
+  </div>
+  <div>
+    <label for="email" class="title">Email:</label>
+    <input type="email" id="email" name="email" />
+  </div>
+  <div>
+    <span class="title">Gender:</span>
+    <input type="radio" name="gender" id="male" value="M" />
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="female" value="F" />
+    <label for="female">Female</label><br />
+  </div>
+  <div>
+    <input type="submit" value="Register" id="submit" />
+  </div>
+</form>
+```
+
+<style>
+  div {
+ border-bottom: 1px solid #efefef;  margin: 10px;
+ padding-bottom: 10px;
+ width: 260px;}
+.title {
+ float: left;
+ width: 100px;
+ text-align: right;
+ padding-right: 10px;}
+.radio-buttons label {
+ float: none;}
+.submit {
+ text-align: right;}
+</style>
+<form action="example.php" method="post">
+ <div>
+ <label for="name" class="title">Name:</label>
+ <input type="text" id="name" name="name" />
+ </div>
+ <div>
+ <label for="email" class="title">Email:</label>
+ <input type="email" id="email" name="email" />
+ </div>
+ <div>
+ <span class="title">Gender:</span>
+ <input type="radio" name="gender" id="male"  value="M" />
+ <label for="male">Male</label>
+ <input type="radio" name="gender" id="female"  value="F" />
+ <label for="female">Female</label><br />
+ </div>
+ <div>
+ <input type="submit" value="Register" 
+ id="submit" />
+ </div>
+</form>
