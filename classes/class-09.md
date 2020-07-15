@@ -194,3 +194,79 @@ Example:
     </form>
   </body>
 </html>
+
+---
+
+## Chapter 14 HTMl Book Lists,Tables,and Forms.
+
+There are several CSS properties that were created to work with specific types ofHTML elements.
+
+### Lists.
+
+1. Bullet Point Style.
+
+`list-syle-type` : this property aloows you to control the shape or style of a bullet point.
+
+- Unordered List (ul) :
+   <ul>
+   <li style="list-style-type: none">none</li>
+   <li style="list-style-type: disc">disc</li>
+   <li style="list-style-type: circle">circle</li>
+   <li style="list-style-type: square">square</li>
+   </ul>
+
+- ordered List (ol) :
+
+  - decimal (1 2 3 4 5)
+
+  - decimal-leading-zero (01 02 03)
+
+  - lower-alpha (a b c)
+
+  - Upper-alpha (A B C)
+
+  - Lower-romain (i. ii. iii.)
+
+  - Upper-romain (I. II. III.)
+
+2. `list-style-image` : You can specify an image to act as a bullet point using the list-style-image property.
+
+```css
+ul {
+  list-style-image: url("images/star.png");
+}
+li {
+  margin: 10px 0px 0px 0px;
+}
+```
+
+3. `list-style-position` : Lists are indented into the page by default and the list-style-position property indicates whether the marker should appear on the inside or the outside of the box containing the main points.
+
+### Tables.
+
+|        Peroperties        |                                     Description                                     |
+| :-----------------------: | :---------------------------------------------------------------------------------: |
+|           width           |                            to set the width of the table                            |
+|          padding          |       to set the space between the border of each table cell and its content        |
+|      text-transform       |              to convert the content of the table headers to uppercase               |
+| letter-spacing, font-size |            to add additional styling to the content of the table headers            |
+| border-top, border-bottom |                  to set borders above and below the table headers                   |
+|        text-align         | to align the writing to the left of some table cells and to the right of the others |
+|     background-color      |            to change the background color of the alternating table rows             |
+|          :hover           |              to highlight a table row when a user's mouse goes over it              |
+
+If you have empty cells in you table you can choose there display.
+
+- show : This shows the borders of any empty cells
+
+- hide : This hides the borders of any empty cells.
+
+- inherit: If you have one table nested inside another, the inherit value instructs the table cells to obey the rules of the containing table.
+
+---
+
+### Forms
+
+#### Aligning from controls.
+
+Labels for form elements are often different lengths, which means that the form controls will not appear in a straight line. This is demonstrated in the example on the right (without CSS applied to the form controls).
