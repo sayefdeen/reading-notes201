@@ -293,3 +293,81 @@ Labels for form elements are often different lengths, which means that the form 
   </div>
 </form>
 ```
+
+---
+
+## Chapter 6 Js Book Events.
+
+When you browse the web, your browser registers different types of events, it's the browser's way of saying " That Just Happend" Your scipt can then respond to these events, scripts often resopnd to these events by updating the content of the web page (via the Document Pbject Model).
+
+### Different Types Of Events.
+
+UI Events : User Interface Events.
+
+| Event  |                           Description                            |
+| :----: | :--------------------------------------------------------------: |
+|  load  |                  Web page has finished loading                   |
+| unload |                      Web page is unloading                       |
+| error  | Browser encounters a JavaScript error or an assest doesn't exist |
+| resize |                 Browser window has been resized                  |
+| scroll |              User has scrolled up or sown the page               |
+
+KeyBoard Events.
+
+|  Event   |         Description         |
+| :------: | :-------------------------: |
+| keydown  |  User first presses a key   |
+|  keyup   |     User releases a key     |
+| keypress | Character is being inserted |
+
+Mouse Events.
+
+|   Event   |                   Description                    |
+| :-------: | :----------------------------------------------: |
+|   click   |            User clicks in an elements            |
+|  dbclick  |        User double clicks in an elements         |
+| mousedown |  User press a mouse button while in an element   |
+|  mouseup  | User releases a mouse button while in an element |
+| mousemove |    User moves the mouse (not in touch screen)    |
+| mouseover |       User moves the mouse over an element       |
+| mouseset  |       User moves the mouse off an element        |
+
+Form Events.
+
+| Event  |                     Description                      |
+| :----: | :--------------------------------------------------: |
+| input  |      Value in any `<input>` element has changed      |
+| change | Value in select box,checkbox,or radio button changes |
+| submit |                User submits the form                 |
+| reset  |         User clicks on a form's reset button         |
+|  cut   |         User cuts content from a from filed          |
+|  copy  |        User copies content from a from filed         |
+| paste  |         User paste content into a from filed         |
+| select |        User selects some text in a form filed        |
+
+---
+
+## How Events Trigger JavaScipt code.
+
+When the user interacts with the HTML on a web page, there are three steps involved in getting it to trigger aome JavaScript code. These three step known as **even handling**.
+
+1. Select the element (node) you want the script to respond to respond to.
+
+2. Indicate which event on the selectd node will trigger the response. Programming call this **binding** an event to a DOM node
+
+3. State the code you want to run when the event occurs. when the event occurs, on a specified element, it will trigger a function, it could be named or make it anonymous function.
+
+### Three ways to bind an event to an element.
+
+1. HTML Event Handlers.
+
+<p style="color: red; text-transform: uppercase;"> Please Note this approach is now considered bad practice</p>
+
+Early versions of HTMl included a set of attributes that could respond to events on the element they were added to, The attribute names matched the event names, their values called the function that was to run when that event occurred.
+
+```html
+<form method="post" action="https://www.example.org/register">
+  <label for="username"> Create a username:</label>
+  <input type="text" id="username" onblur="checkUsername()" />
+</form>
+```
