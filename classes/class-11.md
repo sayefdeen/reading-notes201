@@ -220,3 +220,12 @@ HTML5 comes with elements for embedding rich media in documents `<video>` and `<
   <source src="img/rabbit320.mp4" type="video/mp4">
   <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
 </video>
+
+```javascript
+<video controls>
+  <source src="img/rabbit320.mp4" type="video/mp4">
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+</video>
+```
+
+You can review what all the HTML features do in the article linked above; for our purposes here, the most interesting attribute is `controls`, which enables the default set of playback controls. If you don't specify this, you get no playback controls.
