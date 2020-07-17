@@ -211,3 +211,12 @@ by Google Analytics for each website you are tracking. It should appear just bef
 6. **Date Selector** : Using the date selector in the top right hand corner of the site, you can change the period of time the reports display. When you log in, this is usually set to the last month, but you can change it to report on a specific time period.
 
 7. **Export** : The export link just above the title that says "visitors overview" allows you to export the statistics on this page for other applications such as Excel.
+
+## Video and Audio APIs.
+
+HTML5 comes with elements for embedding rich media in documents `<video>` and `<audio>`
+
+<video controls>
+  <source src="img/rabbit320.mp4" type="video/mp4">
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+</video>
