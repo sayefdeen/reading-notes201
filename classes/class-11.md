@@ -176,5 +176,38 @@ Determining which keywords to use on your site can be one of the hardest tasks w
 2. **Organize** : Group the keywords into separate lists for the different sections or categories of your website.
 
 3. **Research** : There are several tools that let you enter your keywords and then they will suggest additional keywords you might like to consider, such as:
+
    - [Word Tracker](www.wordtracker.com).
    - [Keyword Discovery](www.keyworddiscovery.com).
+
+4. **Compare** : It is very unlikely that your
+   site will appear at the top of the search results for every keyword. This is especially true for topics where there is a lot of competition, Some of the keyword research sites can tell you how many people have searched for a specific keyword to help you know how much competition those terms have.
+
+5. **Refine** : If there is a phrase that is very relevant but you find there is a lot of competition, you should still use it. To improve the chances of your site being found you can look at whether there are other words that could be incorporated into a phrase
+
+6. **Map** : Pick 3-5 keywords or phrases that map to each page of your website and use these as the keywords for each page.
+
+### Analytics : Learning About your visitors.
+
+As soon as people start coming to your site, you can start analyzing how they found it, what they were looking at and at what point they are leaving. One of the best tools for doing this is a free service offered by Google called **Google Analytics**.
+
+The Google Analytics service relies on you signing up for an account at: [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) The site will give you a piece of tracking code which you need to put on every page of your site.
+
+A tracking code is provided
+by Google Analytics for each website you are tracking. It should appear just before the closing `</head>` tag. The code does not alter the appearance of your web pages.
+
+### Analytics : how many People are coming to your site?
+
+1. **Visits** : This is the number of times people have come to your site. If someone is inactive on your site for 30 minutes and then looks at another page on your site, it will be counted as a new visit.
+
+2. **Unique Visits** : This is the total number of people who have visited your site over the specified period. The number of unique visits will be lower than the number of visits if people have been returning to your site more than once in the defined period.
+
+3. **Page Views** : The total number of pages all visitors have viewed on your site.
+
+4. **Pages per Visit** : The average number of pages each visitors has looked at on your site per visit.
+
+5. **Average Time On Site** : The average amount of time each user has spent on the site per visit.
+
+6. **Date Selector** : Using the date selector in the top right hand corner of the site, you can change the period of time the reports display. When you log in, this is usually set to the last month, but you can change it to report on a specific time period.
+
+7. **Export** : The export link just above the title that says "visitors overview" allows you to export the statistics on this page for other applications such as Excel.
