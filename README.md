@@ -17,7 +17,7 @@
 | Day9  | 15/7/2020 | class-09 | [class-09](https://sayefdeen.github.io/reading-notes201/classes/class-09) |
 | Day10 | 17/7/2020 | class-10 | [class-10](https://sayefdeen.github.io/reading-notes201/classes/class-10) |
 | Day11 | 18/7/2020 | class-11 | [class-11](https://sayefdeen.github.io/reading-notes201/classes/class-11) |
-| Day12 |           |          |                                                                           |
+| Day12 | 20/7/2020 | class-12 | [class-12](https://sayefdeen.github.io/reading-notes201/classes/class-12) |
 | Day13 |           |          |                                                                           |
 | Day14 |           |          |                                                                           |
 | Day15 |           |          |                                                                           |
