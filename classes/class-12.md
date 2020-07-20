@@ -190,3 +190,59 @@ Strokes a given text at the given (x,y) position, Optionally with a maximum widt
 - textBaseLine = value : Baseline alignment setting, Possible value (top, hanging,middle,alphabetic, ideographic,bottom) the default value is alphabetic.
 
 - direction = value : Directionality, Possible values : (ltr,rtl,inherate), The defaule value is inherit
+
+## Applying styles and colors.
+
+There are two important properties we can use.
+
+- `fillStyle` = color : Sets the style used when filling shapes, the color will appear filling the object
+- `strokeStyle` = color : Sets the style shaped outline, the color will appear around the object.
+
+### Transparency.
+
+n addition to drawing opaque shapes to the canvas, we can also draw semi-transparent (or translucent) shapes. This is done by either setting the `globalAlpha` property or by assigning a semi-transparent color to the stroke and/or fill style.
+
+The `globalAlpha` property can be useful if you want to draw a lot of shapes on the canvas with similar transparency, but otherwise it's generally more useful to set the transparency on individual shapes when setting their colors.
+
+### Line Style.
+
+There are several properties which allow us to style lines.
+
+- lineWidth = value : Sets the width of lines drawn in the future
+
+- lineCape = type : Sets the appearance of the ends of lines.
+
+- lineJoin = type : Sets the appearance of the "corners" where lines meet.
+
+- miterLimit = value : Establishes a limit on the miter when two lines join at a sharp angle, to let you control how thick the junction becomes.
+
+- getLineDash() : Returns the current line dash pattern array containing an even number of non-negative numbers.
+
+- setLineDash(segmants) : Sets the current line dash pattern.
+
+- lineDashOffset = value : Specifies where to start a dash array on a line.
+
+### Gradients
+
+Just like any normal drawing program, we can fill and stroke shapes using linear and radial gradients. We create a `CanvasGradient` object by using one of the following methods. We can then assign this object to the `fillStyle` or `strokeStyle` properties.
+
+- createLinearGradient(x1,x2,y1,y2) : Creates a linear gradient object with a starting point of (x1, y1) and an end point of (x2, y2).
+
+- createLinearGradient(x1,x2,y1,y2,r2) : Creates a radial gradient. The parameters represent two circles, one with its center at `(x1, y1)` and a radius of `r1`, and the other with its center at `(x2, y2)` with a radius of `r2`
+
+### Patterns
+
+`createPattern(image,type)` : We use this method to create a `CanvasPattern` object, Once we've created a pattern, we can assign it to the `fillStyle` or `strokeStyle` properties.
+
+The type specifies how to use the image in order to create the pattern, and must be one of the following string values:
+
+- repeat
+  Tiles the image in both vertical and horizontal directions.
+
+- repeat-x
+  Tiles the image horizontally but not vertically.
+
+- repeat-y
+  Tiles the image vertically but not horizontally.
+- no-repeat
+  Doesn't tile the image. It's used only once.
