@@ -168,3 +168,25 @@ Before we can start drawing, we need to talk about the canvas grid or coordinate
 2. Paths.
 3. Arcs.
 4. Bezier and quadratic curves.
+
+---
+
+## Drawing text.
+
+The canves rendering context provides two methods to render text.
+
+`fillText(text,x,y[, ,axWidth]`
+Fills a given text at the given (x,y) position, Optionally with a maximum width to draw, it will Appeare as a filled Text
+
+`strokeText (text,x,y [,maxWidth]`
+Strokes a given text at the given (x,y) position, Optionally with a maximum width to draw, it will appear as a non-filled text.
+
+### Styling text.
+
+- font = value : This string uses the same syntax as the CSS font property, The default font is **10px sans-serif**
+
+- textAlign = value : Text alignment setting Possible values are (top,end,left,right,center) the default value is start
+
+- textBaseLine = value : Baseline alignment setting, Possible value (top, hanging,middle,alphabetic, ideographic,bottom) the default value is alphabetic.
+
+- direction = value : Directionality, Possible values : (ltr,rtl,inherate), The defaule value is inherit
