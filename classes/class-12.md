@@ -152,3 +152,19 @@ The Result:
     <canvas id="tutorial" width="150" height="150"></canvas>
   </body>
 </html>
+
+---
+
+## Drawing Shpes with canvas.
+
+### The Grid.
+
+<img src="img/grid.png" style="float:right; margin: 15px" />
+Before we can start drawing, we need to talk about the canvas grid or coordinate space. Our HTML skeleton from the previous page had a canvas element 150 pixels wide and 150 pixels high. To the right, you see this canvas with the default grid overlayed. Normally 1 unit in the grid corresponds to 1 pixel on the canvas. The origin of this grid is positioned in the top left corner at coordinate (0,0). All elements are placed relative to this origin. So the position of the top left corner of the blue square becomes x pixels from the left and y pixels from the top, at coordinate (x,y). Later in this tutorial we'll see how we can translate the origin to a different position, rotate the grid and even scale it, but for now we'll stick to the default.
+
+`<canvas>` only supports two primitive shapes: rectangles and paths (lists of points connected by lines). All other shapes must be created by combining one or more paths. Luckily, we have an assortment of path drawing functions which make it possible to compose very complex shapes.
+
+1. Rectangular.
+2. Paths.
+3. Arcs.
+4. Bezier and quadratic curves.
