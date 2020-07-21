@@ -76,3 +76,32 @@ var value = localStorage.getItem("bar");
 // bar is the key of the first item
 // 5 meters is the value of the key.
 ```
+
+## Tracking Changes to the HTML5 Storage Area.
+
+If you want to keep track programmatically of when the storage area changes, you can trap the storage event. The storage event is fired on the window object whenever setItem(), removeItem(), or clear() is called and actually changes something.
+
+```javascript
+if (window.addEventListener) {
+  window.addEventListener("storage", handle_storage, false);
+} else {
+  window.attachEvent("onstorage", handle_storage);
+}
+
+function handle_storage(e) {
+  if (!e) {
+    e = window.event;
+  }
+}
+```
+
+**StorageEvent Object**
+
+| Property |  Type  |                              Description                              |
+| :------: | :----: | :-------------------------------------------------------------------: |
+|   key    | string |          the named key that was added, removed, or modified           |
+| oldValue |  any   | the previous value (now overwritten), or null if a new item was added |
+| newValue |  any   |             the new value, or null if an item was removed             |
+|   url    | string |       he page which called a method that triggered this change        |
+
+Note: the url property was originally called uri. Some browsers shipped with that property before the specification changed. For maximum compatibility, you should check whether the url property exists, and if not, check for the uri property instead.
